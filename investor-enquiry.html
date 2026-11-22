@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investor Enquiry — Ravzen Ventures LLP</title>
+<meta name="description" content="Tell us your mandate and we'll match you to a sourced, pre-diligenced pipeline across the corridor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<meta property="og:title" content="Investor Enquiry — Ravzen Ventures LLP">
+<meta property="og:description" content="Tell us your mandate and we'll match you to a sourced, pre-diligenced pipeline across the corridor.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ravzen Ventures LLP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="investor">
+
+<div id="nav-mount"></div>
+
+<header class="page-hero">
+  <div class="wrap">
+    <div class="kicker" data-reveal>For investors</div>
+    <h1 data-reveal>Investor enquiry.</h1>
+    <p data-reveal>Describe your mandate and we'll match you to a sourced, pre-diligenced pipeline — not a mass-forwarded deal list.</p>
+  </div>
+</header>
+
+<section class="section-light">
+  <div class="wrap">
+    <div class="form-wrap">
+      <div class="form-aside" data-reveal>
+        <div class="block"><h3>What you get</h3><p>Deals that fit your stated mandate, each one we've diligenced ourselves before it reaches you.</p></div>
+        <div class="block"><div class="label">Prefer email?</div><a href="mailto:contact@ravzenventures.com">contact@ravzenventures.com</a></div>
+        <div class="block"><div class="label">Discretion</div><p>Your mandate and identity are never shared without your consent.</p></div>
+      </div>
+
+      <form data-reveal data-mailto="Investor Enquiry via ravzenventures.com" novalidate>
+        <div class="field row2">
+          <div><label for="name">Contact name</label><input type="text" id="name" name="name" required></div>
+          <div><label for="org">Organisation</label><input type="text" id="org" name="org" required></div>
+        </div>
+        <div class="field row2">
+          <div><label for="email">Email</label><input type="email" id="email" name="email" required></div>
+          <div>
+            <label for="type">Investor type</label>
+            <select id="type" name="type">
+              <option>Family office</option><option>Private equity / VC fund</option>
+              <option>Institutional lender</option><option>Strategic investor</option>
+              <option>NRI / diaspora capital</option><option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="field row2">
+          <div><label for="ticket">Typical ticket size</label><input type="text" id="ticket" name="ticket" placeholder="e.g. $2M–$25M"></div>
+          <div>
+            <label for="instrument">Instrument appetite</label>
+            <select id="instrument" name="instrument">
+              <option>Equity</option><option>Debt</option><option>Hybrid</option><option>Flexible</option>
+            </select>
+          </div>
+        </div>
+        <div class="field row2">
+          <div><label for="sectors">Preferred sectors</label><input type="text" id="sectors" name="sectors" placeholder="e.g. pharma, infrastructure"></div>
+          <div><label for="geo">Preferred geography</label><input type="text" id="geo" name="geo" placeholder="India, UAE, Singapore, USA"></div>
+        </div>
+        <div class="field">
+          <label for="accreditation">Accreditation status</label>
+          <select id="accreditation" name="accreditation">
+            <option>Accredited / professional investor</option><option>Institutional</option><option>Prefer to discuss</option>
+          </select>
+        </div>
+        <div class="field"><label for="notes">Anything else about your mandate</label><textarea id="notes" name="notes"></textarea></div>
+        <label class="consent"><input type="checkbox" required> I consent to Ravzen Ventures contacting me about relevant opportunities. See the <a href="privacy-policy.html" style="color:var(--brass);">Privacy Policy</a>.</label>
+        <button type="submit" class="btn btn-primary">Submit enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div id="footer-mount"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

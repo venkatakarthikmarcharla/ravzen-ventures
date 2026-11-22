@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ravzen Ventures LLP — Think Clearly. Build Boldly. Act with Integrity.</title>
+  <meta name="description"
+    content="Ravzen Ventures helps founders and growing businesses navigate strategy, fundraising readiness and investor connections — with honest advice and no empty promises. India · UAE · Singapore · USA.">
+  <meta property="og:title" content="Ravzen Ventures LLP — Think Clearly. Build Boldly. Act with Integrity.">
+  <meta property="og:description"
+    content="Every founder deserves an honest conversation before making their next big decision. Practical advisory and strategic connections across India, UAE, Singapore and the USA.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body data-page="home">
+
+  <div id="nav-mount"></div>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero-v2">
+    <span class="hero-corner">India · UAE · Singapore · USA</span>
+    <div class="hero-visual" aria-hidden="true">
+      <!-- Symmetric diamond: India top, UAE right, Singapore bottom, USA left -->
+      <svg class="corridor-svg" viewBox="0 0 440 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="hv-glow" x="-100%" y="-100%" width="400%" height="400%">
+            <feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="hv-gs" x="-150%" y="-150%" width="400%" height="400%">
+            <feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <!-- Node positions: India(220,55) UAE(370,195) Singapore(220,335) USA(70,195) -->
+          <path id="p-iu"  d="M220,68 C295,68 345,120 368,182"/>
+          <path id="p-ius" d="M220,68 C195,100 105,150 72,182"/>
+          <path id="p-us"  d="M368,208 C362,258 310,308 235,332"/>
+          <path id="p-us2" d="M72,208 C105,258 155,308 205,332"/>
+          <path id="p-iu-r"  d="M368,182 C345,120 295,68 220,68"/>
+          <path id="p-us-r"  d="M235,332 C310,308 362,258 368,208"/>
+          <path id="p-us2-r" d="M205,332 C155,308 105,258 72,208"/>
+        </defs>
+
+        <!-- Connection lines (draw on load) -->
+        <path class="hv-line" d="M220,68 C295,68 345,120 368,182"/>
+        <path class="hv-line" d="M220,68 C195,100 105,150 72,182" style="--hv-d:0.12s"/>
+        <path class="hv-line" d="M368,208 C362,258 310,308 235,332" style="--hv-d:0.24s"/>
+        <path class="hv-line" d="M72,208 C105,258 155,308 205,332" style="--hv-d:0.36s"/>
+        <path class="hv-line hv-line--dim" d="M220,68 C228,170 226,255 220,332" style="--hv-d:0.5s"/>
+        <path class="hv-line hv-line--dim" d="M72,195 C165,188 275,188 368,195" style="--hv-d:0.62s"/>
+
+        <!-- Flowing dots: India→UAE -->
+        <circle r="3.5" fill="#4A8CF0" filter="url(#hv-gs)">
+          <animateMotion dur="2.6s" repeatCount="indefinite" begin="0s"><mpath href="#p-iu"/></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.88;1" dur="2.6s" repeatCount="indefinite" begin="0s"/>
+        </circle>
+        <!-- India→USA -->
+        <circle r="3.5" fill="#4A8CF0" filter="url(#hv-gs)">
+          <animateMotion dur="3.0s" repeatCount="indefinite" begin="0.7s"><mpath href="#p-ius"/></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.88;1" dur="3.0s" repeatCount="indefinite" begin="0.7s"/>
+        </circle>
+        <!-- UAE→Singapore -->
+        <circle r="3" fill="#60A8FF" filter="url(#hv-gs)">
+          <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.4s"><mpath href="#p-us"/></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.88;1" dur="2.4s" repeatCount="indefinite" begin="1.4s"/>
+        </circle>
+        <!-- USA→Singapore -->
+        <circle r="3" fill="#60A8FF" filter="url(#hv-gs)">
+          <animateMotion dur="2.7s" repeatCount="indefinite" begin="0.3s"><mpath href="#p-us2"/></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.88;1" dur="2.7s" repeatCount="indefinite" begin="0.3s"/>
+        </circle>
+        <!-- Reverse UAE→India -->
+        <circle r="2.5" fill="#2E6FD6" filter="url(#hv-gs)">
+          <animateMotion dur="2.6s" repeatCount="indefinite" begin="1.9s"><mpath href="#p-iu-r"/></animateMotion>
+          <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.08;0.88;1" dur="2.6s" repeatCount="indefinite" begin="1.9s"/>
+        </circle>
+        <!-- Reverse Singapore→UAE -->
+        <circle r="2.5" fill="#2E6FD6" filter="url(#hv-gs)">
+          <animateMotion dur="2.4s" repeatCount="indefinite" begin="0.9s"><mpath href="#p-us-r"/></animateMotion>
+          <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.08;0.88;1" dur="2.4s" repeatCount="indefinite" begin="0.9s"/>
+        </circle>
+        <!-- Reverse Singapore→USA -->
+        <circle r="2.5" fill="#2E6FD6" filter="url(#hv-gs)">
+          <animateMotion dur="2.7s" repeatCount="indefinite" begin="2.2s"><mpath href="#p-us2-r"/></animateMotion>
+          <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.08;0.88;1" dur="2.7s" repeatCount="indefinite" begin="2.2s"/>
+        </circle>
+
+        <!-- India node (top) -->
+        <circle cx="220" cy="55" r="28" class="hv-ring" style="animation-delay:0s"/>
+        <circle cx="220" cy="55" r="14" fill="rgba(46,111,214,0.09)" stroke="#2E6FD6" stroke-width="1.2"/>
+        <circle cx="220" cy="55" r="5" fill="#4A8CF0" filter="url(#hv-glow)"/>
+        <text x="220" y="26" text-anchor="middle" class="hv-label">India</text>
+
+        <!-- UAE node (right) -->
+        <circle cx="370" cy="195" r="28" class="hv-ring" style="animation-delay:0.4s"/>
+        <circle cx="370" cy="195" r="14" fill="rgba(46,111,214,0.09)" stroke="#2E6FD6" stroke-width="1.2"/>
+        <circle cx="370" cy="195" r="5" fill="#4A8CF0" filter="url(#hv-glow)"/>
+        <text x="370" y="224" text-anchor="middle" class="hv-label">UAE</text>
+
+        <!-- Singapore node (bottom) -->
+        <circle cx="220" cy="335" r="28" class="hv-ring" style="animation-delay:0.8s"/>
+        <circle cx="220" cy="335" r="14" fill="rgba(46,111,214,0.09)" stroke="#2E6FD6" stroke-width="1.2"/>
+        <circle cx="220" cy="335" r="5" fill="#4A8CF0" filter="url(#hv-glow)"/>
+        <text x="220" y="367" text-anchor="middle" class="hv-label">Singapore</text>
+
+        <!-- USA node (left) -->
+        <circle cx="70" cy="195" r="28" class="hv-ring" style="animation-delay:1.2s"/>
+        <circle cx="70" cy="195" r="14" fill="rgba(46,111,214,0.09)" stroke="#2E6FD6" stroke-width="1.2"/>
+        <circle cx="70" cy="195" r="5" fill="#4A8CF0" filter="url(#hv-glow)"/>
+        <text x="70" y="224" text-anchor="middle" class="hv-label">USA</text>
+
+        <!-- Rising growth trend line -->
+        <polyline class="hv-trend" points="20,390 70,376 130,358 195,336 255,312 315,284 370,256 420,232 440,220"/>
+
+        <!-- Background grid dots -->
+        <g opacity="0.16">
+          <circle cx="150" cy="108" r="1.5" fill="#2E6FD6"/><circle cx="195" cy="90" r="1.5" fill="#2E6FD6"/>
+          <circle cx="290" cy="90" r="1.5" fill="#2E6FD6"/><circle cx="335" cy="118" r="1.5" fill="#2E6FD6"/>
+          <circle cx="140" cy="295" r="1.5" fill="#2E6FD6"/><circle cx="185" cy="275" r="1.5" fill="#2E6FD6"/>
+          <circle cx="300" cy="272" r="1.5" fill="#2E6FD6"/><circle cx="340" cy="290" r="1.5" fill="#2E6FD6"/>
+          <circle cx="218" cy="185" r="1" fill="#2E6FD6"/><circle cx="280" cy="155" r="1" fill="#2E6FD6"/>
+          <circle cx="165" cy="245" r="1" fill="#2E6FD6"/><circle cx="320" cy="238" r="1" fill="#2E6FD6"/>
+        </g>
+      </svg>
+    </div>
+    <div class="wrap">
+      <div class="eyebrow" data-reveal>Founder-first advisory &amp; strategic connections</div>
+      <h1 class="hero-nvd">
+        <span class="nvd-word nvd-w1">Think Clearly.</span>
+        <span class="nvd-word hero-accent nvd-w2">Build Boldly.</span>
+        <span class="nvd-word nvd-w3">Act with Integrity.</span>
+      </h1>
+      <p class="hero-sub" data-reveal>Every founder deserves an honest conversation before making their next big decision. We help ambitious founders and growing businesses navigate strategy, fundraising readiness and investor connections — with clear advice and no empty promises.</p>
+      <div class="hero-cta hero-cta--paths" data-reveal>
+        <a href="for-founders.html" class="btn btn-path">I'm Building a Startup</a>
+        <a href="submit-a-project.html" class="btn btn-path">I'm Exploring Fundraising</a>
+        <a href="for-investors.html" class="btn btn-path btn-path--accent">I'm an Investor</a>
+        <a href="contact.html" class="btn btn-path">I Have a Business Opportunity</a>
+      </div>
+      <div class="hero-stats" data-reveal>
+        <div class="hstat">
+          <strong>4 markets</strong>
+          <span>India, UAE, Singapore, USA</span>
+        </div>
+        <div class="hstat">
+          <strong>Honest always</strong>
+          <span>realistic feedback, even when not investor-ready</span>
+        </div>
+        <div class="hstat">
+          <strong>NDA first</strong>
+          <span>every conversation is confidential</span>
+        </div>
+        <div class="hstat">
+          <strong>No guarantees</strong>
+          <span>preparation, perspective and disciplined execution</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== FOUR SERVICE PILLARS ===================== -->
+  <section class="band-dark">
+    <div class="wrap">
+      <div class="eyebrow text-accent" data-reveal>What we do</div>
+      <h2 data-reveal style="margin:14px 0 40px;max-width:30ch;">Four areas where we can make a practical difference.</h2>
+      <div class="nvd-grid nvd-grid--4">
+        <div class="nvd-card" data-reveal>
+          <div class="nvd-num">01</div>
+          <h3>Startup Advisory</h3>
+          <p class="nvd-sub">Business models, strategy, positioning and growth planning.</p>
+          <ul>
+            <li>Assess your business model for market fit and scalability</li>
+            <li>Clarify your positioning and competitive advantage</li>
+            <li>Build a realistic growth and execution plan</li>
+            <li>Prepare you for the next stage — fundraise, partnership or expansion</li>
+          </ul>
+        </div>
+        <div class="nvd-card" data-reveal>
+          <div class="nvd-num">02</div>
+          <h3>Fundraising Readiness</h3>
+          <p class="nvd-sub">Pitch decks, financial narratives, investor materials and due diligence preparation.</p>
+          <ul>
+            <li>Build a compelling, honest pitch deck and financial model</li>
+            <li>Prepare your data room and due diligence documents</li>
+            <li>Understand what investors will ask — and what they will find</li>
+            <li>Set realistic expectations about timelines and terms</li>
+          </ul>
+        </div>
+        <div class="nvd-card" data-reveal>
+          <div class="nvd-num">03</div>
+          <h3>Investor &amp; Strategic Connections</h3>
+          <p class="nvd-sub">Relevant introductions and transaction support where there is a genuine fit.</p>
+          <ul>
+            <li>Introductions to investors where your business is a real match</li>
+            <li>Cross-border opportunities across India, UAE, Singapore and the USA</li>
+            <li>Support through term sheets and negotiation</li>
+            <li>No introductions made without your knowledge and consent</li>
+          </ul>
+        </div>
+        <div class="nvd-card" data-reveal>
+          <div class="nvd-num">04</div>
+          <h3>Business &amp; Deal Advisory</h3>
+          <p class="nvd-sub">Strategic partnerships, acquisitions and cross-border opportunities.</p>
+          <ul>
+            <li>Identify partnership and acquisition opportunities with clear rationale</li>
+            <li>Structure deals that work across different regulatory environments</li>
+            <li>Navigate import, export and trade finance requirements</li>
+            <li>Support execution through to a clear outcome</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:36px;" data-reveal>
+        <a href="what-we-do.html" class="text-link">See how we work</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== IMAGE BAND ===================== -->
+  <div class="image-band image-band--dubai" data-reveal>
+    <div class="cap">Dubai · India · Singapore · USA — the corridor we work every day</div>
+  </div>
+
+  <!-- ===================== SECTOR FOCUS ===================== -->
+  <section class="band-dark">
+    <div class="wrap">
+      <div class="bignum-head">
+        <div>
+          <div class="eyebrow text-accent" data-reveal>Sector focus</div>
+          <h2 data-reveal style="margin-top:12px;">Depth in a defined set of sectors.</h2>
+        </div>
+        <a href="what-we-do.html" class="text-link" data-reveal>Services</a>
+      </div>
+      <div class="bignum">
+        <div class="row" data-reveal><span class="n">01</span><span class="name">Real estate &amp; construction</span><span class="tag">Development &amp; structured debt</span></div>
+        <div class="row" data-reveal><span class="n">02</span><span class="name">Infrastructure &amp; logistics</span><span class="tag">Project finance &amp; debt</span></div>
+        <div class="row" data-reveal><span class="n">03</span><span class="name">Manufacturing</span><span class="tag">Growth &amp; expansion capital</span></div>
+        <div class="row" data-reveal><span class="n">04</span><span class="name">Agri &amp; agroprocessing</span><span class="tag">Trade &amp; term financing</span></div>
+        <div class="row" data-reveal><span class="n">05</span><span class="name">Healthcare &amp; pharma</span><span class="tag">Project &amp; working capital</span></div>
+        <div class="row" data-reveal><span class="n">06</span><span class="name">Energy</span><span class="tag">Project finance</span></div>
+        <div class="row" data-reveal><span class="n">07</span><span class="name">Trade &amp; export</span><span class="tag">Working capital lines</span></div>
+        <div class="row" data-reveal><span class="n">08</span><span class="name">Technology &amp; services</span><span class="tag">Venture &amp; growth rounds</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== THE CORRIDOR ===================== -->
+  <section class="corridor-band">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-tag" data-reveal>The corridor</div>
+        <h2 data-reveal>Four markets, one route for capital to travel.</h2>
+        <p class="section-lede" data-reveal>India originates a disproportionate share of investable projects. The UAE,
+          Singapore and the US hold a disproportionate share of the capital looking for them. We work the route between.
+        </p>
+      </div>
+      <div class="corridor-line">
+        <div class="corridor-node" data-reveal>
+          <div class="corridor-dot"></div>
+          <h3>India</h3>
+          <p>Project origination, promoter relationships, on-ground diligence.</p>
+        </div>
+        <div class="corridor-node" data-reveal>
+          <div class="corridor-dot"></div>
+          <h3>UAE</h3>
+          <p>Family offices, private capital, trade and structuring hub.</p>
+        </div>
+        <div class="corridor-node" data-reveal>
+          <div class="corridor-dot"></div>
+          <h3>Singapore</h3>
+          <p>Funds, holding structures, gateway to Southeast Asian capital.</p>
+        </div>
+        <div class="corridor-node" data-reveal>
+          <div class="corridor-dot"></div>
+          <h3>USA</h3>
+          <p>Institutional investors, strategic capital, venture and PE.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== APPROACH SNAPSHOT ===================== -->
+  <section class="band-dark">
+    <div class="wrap">
+      <div class="eyebrow text-accent" data-reveal>How we engage</div>
+      <h2 data-reveal style="margin:14px 0 40px;max-width:28ch;">A transparent process — so you always know where you stand.</h2>
+      <div class="approach-steps">
+        <div class="approach-step" data-reveal>
+          <div class="step-n">01</div>
+          <div><h3>Discover</h3><p>Understand your business, goals and current challenge — honestly and without obligation.</p></div>
+        </div>
+        <div class="approach-step" data-reveal>
+          <div class="step-n">02</div>
+          <div><h3>Assess</h3><p>Identify gaps, risks, strengths and realistic opportunities — including what we cannot help with.</p></div>
+        </div>
+        <div class="approach-step" data-reveal>
+          <div class="step-n">03</div>
+          <div><h3>Plan</h3><p>Agree the scope, deliverables, timeline, responsibilities and fees before any work begins.</p></div>
+        </div>
+        <div class="approach-step" data-reveal>
+          <div class="step-n">04</div>
+          <div><h3>Execute</h3><p>Work on agreed priorities and provide clear progress updates throughout.</p></div>
+        </div>
+        <div class="approach-step" data-reveal>
+          <div class="step-n">05</div>
+          <div><h3>Review</h3><p>Review outcomes together and decide on sensible next steps — no lock-in beyond what was agreed.</p></div>
+        </div>
+      </div>
+      <p style="margin-top:36px;" data-reveal>
+        <a href="our-approach.html" class="text-link">Read more about how we work</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="cta-band">
+    <div class="wrap">
+      <h2 data-reveal>Not sure what your next move should be?<br>Let's work it out.</h2>
+      <p data-reveal>Every conversation starts under NDA. Tell us where you are and what you're trying to achieve — we'll give you an honest answer about whether we can help.</p>
+      <div class="hero-cta hero-cta--paths" data-reveal>
+        <a href="for-founders.html" class="btn btn-primary">I'm Building a Startup</a>
+        <a href="for-investors.html" class="btn btn-ghost">I'm an Investor</a>
+        <a href="contact.html" class="btn btn-ghost">Start a Conversation</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-mount"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
